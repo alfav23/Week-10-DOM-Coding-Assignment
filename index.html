@@ -3,12 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <script src="index.js"></script>
-    <title>Document</title>
+    <title>Favorite Colors</title>
 </head>
-<body>
-    <table>
-
+<body class="bg-dark">
+    <h1 class="text-light">Everyone's Favorite Color</h1>
+    
+    <form>
+        <h2 class="text-light m-5">What is your name?</h2>
+        <input type="text" name="name" placeholder="Name">
+        <h2 class="text-light m-5">What is your favorite color?</h2>
+        <input type="text" name="color" placeholder="Favorite Color">
+        <input id="submitButton" class="btn btn-secondary" type="submit" value="submit">
+    </form>
+    <table id="dataTable" class="text-center text-light table-responsive-lg">
+        <tr>
+            <th class="m-5">Name</th>
+            <th>Favorite Color</th>
+        </tr>
     </table>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
+<br>
+<br>
+<footer class="text-center text-light m-5">Alyssa Favorito ©️2023</footer>
 </html>
