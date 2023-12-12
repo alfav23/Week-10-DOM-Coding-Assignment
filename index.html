@@ -7,20 +7,19 @@
     <title>Favorite Colors</title>
 </head>
 <body class="bg-dark">
-    <h1 class="text-light">Everyone's Favorite Color</h1>
-    
+    <h1 id="mainHeader">Everyone's Favorite Color</h1>
     <form>
         <h2 class="text-light m-5">What is your name?</h2>
-        <input type="text" id="name" placeholder="Name">
+        <input class="m-5" type="text" id="name" placeholder="Name">
         <h2 class="text-light m-5">What is your favorite color?</h2>
-        <input type="text" id="color" placeholder="Favorite Color">
+        <input class="m-5" type="text" id="color" placeholder="Favorite Color">
         <button id="submitButton" class="btn btn-secondary">Submit</button>
     </form>
-    <table class="text-center text-light table-responsive-lg">
+    <table id="colorTable" class="tableCenter text-center text-light table-responsive-lg">
         <thead>
         <tr>
-            <th>Name</th>
-            <th>Favorite Color</th>       
+            <th class="m-5">Name</th>
+            <th class="m-5">Favorite Color</th>       
         </tr>
         </thead>
         <tbody id="tableBody">

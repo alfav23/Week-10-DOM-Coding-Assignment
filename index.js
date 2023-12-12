@@ -1,5 +1,11 @@
 // create a variable to hold the table created in html with an id of the same name
 let tableBody = document.getElementById("tableBody")
+let mainHeader = document.getElementById('mainHeader')
+mainHeader.addEventListener("mousemove", () =>{
+    mainHeader.style.color=
+    `rgb(${Math.random()*255}, ${Math.random()*255}, ${Math.random()*255})`
+});
+console.log(mainHeader)
 document.getElementById("submitButton").addEventListener("click", (event) => {
     // added a prevent default to stop the page from refreshing
     event.preventDefault()
