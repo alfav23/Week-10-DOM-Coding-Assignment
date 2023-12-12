@@ -1,30 +1,37 @@
+<!-- boilerplate -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking boostrap styles -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> 
     <title>Favorite Colors</title>
 </head>
 <body class="bg-dark">
+    <!-- setting header id for manipulation in js -->
     <h1 id="mainHeader">Everyone's Favorite Color</h1>
+    <!-- form for user input -->
     <form>
         <h2 class="text-light m-5">What is your name?</h2>
         <input class="m-5" type="text" id="name" placeholder="Name">
         <h2 class="text-light m-5">What is your favorite color?</h2>
         <input class="m-5" type="text" id="color" placeholder="Favorite Color">
+        <!-- button id for js manipulation -->
         <button id="submitButton" class="btn btn-secondary">Submit</button>
     </form>
     <table id="colorTable" class="tableCenter text-center text-light table-responsive-lg">
         <thead>
         <tr>
-            <th class="m-5">Name</th>
-            <th class="m-5">Favorite Color</th>       
+            <th id='tableHeader1' class="m-5">Name</th>
+            <th id='tableHeader2' class="m-5">Favorite Color</th>       
         </tr>
         </thead>
+        <!-- table body for appending new rows based on user input -->
         <tbody id="tableBody">
         </tbody>
     </table>
+    <!-- linking js -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="index.js"></script>
 </body>
