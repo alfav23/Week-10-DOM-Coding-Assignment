@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> 
     <title>Favorite Colors</title>
 </head>
 <body class="bg-dark">
@@ -12,18 +11,23 @@
     
     <form>
         <h2 class="text-light m-5">What is your name?</h2>
-        <input type="text" name="name" placeholder="Name">
+        <input type="text" id="name" placeholder="Name">
         <h2 class="text-light m-5">What is your favorite color?</h2>
-        <input type="text" name="color" placeholder="Favorite Color">
-        <input id="submitButton" class="btn btn-secondary" type="submit" value="submit">
+        <input type="text" id="color" placeholder="Favorite Color">
+        <button id="submitButton" class="btn btn-secondary">Submit</button>
     </form>
-    <table id="dataTable" class="text-center text-light table-responsive-lg">
+    <table class="text-center text-light table-responsive-lg">
+        <thead>
         <tr>
-            <th class="m-5">Name</th>
-            <th>Favorite Color</th>
+            <th>Name</th>
+            <th>Favorite Color</th>       
         </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
     </table>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
 </body>
 <br>
 <br>
